@@ -10,6 +10,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
+// DAO는 데이터베이스와 연결되어 데이터를 조회하거나 저장하는 역할
+// JDBC나 MyBatis JPA 등을 통해 DB와 직접 통신
+
 public class MemberDao {
     public void addMember(Member newMember) throws SQLException {
         Connection conn = DBConnection.getConnection();
